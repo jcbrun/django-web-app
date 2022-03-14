@@ -1,0 +1,13 @@
+
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+<ul>
+    {% for lst in listings %}
+    <li>{{ lst.title }} -- {{ lst.year}}</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}
