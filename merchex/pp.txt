@@ -1,0 +1,37 @@
+.
+├── db.sqlite3
+├── listings
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── 0002_band_active_band_biography_band_genre_and_more.py
+│   │   ├── 0003_listing_description_listing_sold_listing_type_and_more.py
+│   │   ├── 0004_listing_band.py
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── static
+│   │   └── listings
+│   │       └── styles.css
+│   ├── templates
+│   │   └── listings
+│   │       ├── 00_base.html
+│   │       ├── about.html
+│   │       ├── band_detail.html
+│   │       ├── band_list.html
+│   │       ├── contact.html
+│   │       ├── listings_detail.html
+│   │       └── listings_list.html
+│   ├── tests.py
+│   └── views.py
+├── manage.py
+├── merchex
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+└── pp.txt
+
+7 directories, 27 files

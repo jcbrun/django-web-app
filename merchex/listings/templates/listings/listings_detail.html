@@ -1,0 +1,22 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+<h2>{{ lst.title }}</h2>
+
+<ul>
+    <li>Type : {{ lst.get_type_display }}</li>
+    <li>Année : {{ lst.year }}</li>
+    <li>Sold : {{ lst.sold|yesno }}</li>
+   </ul>
+   
+   <p>{{ lst.description }}</p>
+
+<a href="{% url 'listings-update' lst.id %}">Modifier ce listing</a>
+<br>
+<a href="{% url 'listings-delete' lst.id %}">Supprimer ce listing</a>
+<br>
+<a href="{% url 'listings-list' %}">Retour à tous les listings</a>
+
+
+{% endblock %}

@@ -1,14 +1,20 @@
 {% load static %}
 
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Merchex, Mon site DJANGO</title>
-        <link rel="stylesheet" href="{% static 'listings/styles.css' %}" />
+      <meta charset="utf-8">
+      <title>Merchex, Mon site DJANGO est très joli</title>
+      <link rel="stylesheet" type="text/css" href="{% static 'listings/styles.css' %}" />
     </head>
     <body>
 
         <nav>
-          <a href="{% url 'band-list' %}">Groupes</a>
+          <ul>
+            <li><a href="{% url 'band-list' %}">Groupes</a></li>
+            <li><a href="{% url 'listings-list' %}">Listes</a></li>
+            <li><a href="{% url 'contact' %}">Nous contacter</a></li>
+          </ul>
         </nav>
      
         {% block content %}{% endblock %}
